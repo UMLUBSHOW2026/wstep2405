@@ -326,8 +326,8 @@ async function generujWszystkieBiletyPDF(name, seats){
         const seat = seatId.match(/M(\d+)/)[1];
 
         page.drawText(name, { x: 120, y: 180, size: 12, font });
-        page.drawText(row,  { x: 285, y: 36,  size: 12, font });
-        page.drawText(seat, { x: 319, y: 36,  size: 12, font });
+        page.drawText(row,  { x: 285, y: 43,  size: 12, font });
+        page.drawText(seat, { x: 319, y: 43,  size: 12, font });
     }
 
     // 👉 STRONA 2 (QR) tylko raz na końcu

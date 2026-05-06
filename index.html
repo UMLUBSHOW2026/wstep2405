@@ -307,7 +307,7 @@ document.getElementById("cancelModal").onclick=()=>{modal.style.display="none"; 
 // Zapis rezerwacji + PDF
 async function generujWszystkieBiletyPDF(name, seats){
 
-    const existingPdfBytes = await fetch("Kopia – WSTEP-UMLUBSHOW2026.pdf").then(res => res.arrayBuffer());
+    const existingPdfBytes = await fetch("bilet123.pdf").then(res => res.arrayBuffer());
     const basePdf = await PDFLib.PDFDocument.load(existingPdfBytes);
 
     const finalPdf = await PDFLib.PDFDocument.create();
